@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: shotit-processor
-          image: shotit-processor:latest
+          image: DOCKER_IMAGE
           imagePullPolicy: Never
           envFrom:
             - secretRef:
