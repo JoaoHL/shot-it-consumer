@@ -35,7 +35,7 @@ describe("Video Controller", () => {
 
     it("should listen to queue", async () => {
         const queue = {
-            listen: vi.fn()
+            listen: vi.fn().mockReturnValue(Promise.resolve())
         } as unknown as RabbitMQService
 
         const service = {
